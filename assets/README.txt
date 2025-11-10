@@ -1,1 +1,0 @@
-Place your avatar image here as 'avatar.jpg' and update index.html if needed.
