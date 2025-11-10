@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasty Adda — Fresh. Fast. Local.</title>
+  <meta name="description" content="Tasty Adda — delicious veg & non‑veg plates, snacks, and thalis in Badlapur. Order via WhatsApp or visit our store." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;        /* page background */
+      --card:#0f172a;      /* card background */
+      --text:#e2e8f0;      /* primary text */
+      --muted:#94a3b8;     /* secondary text */
+      --brand:#0ea5e9;     /* accent */
+      --brand-2:#22d3ee;   /* accent 2 */
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --shadow:0 20px 35px rgba(2,6,23,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 10% -10%, rgba(34,211,238,.12), transparent 50%), radial-gradient(1200px 700px at 120% 10%, rgba(14,165,233,.15), transparent 45%), var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px, 92%);margin-inline:auto}/* Topbar */
+header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,18,32,.9), rgba(11,18,32,.7));backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(148,163,184,.15)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+.brand .logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;box-shadow:var(--shadow)}
+.brand .logo span{font-weight:800;color:#001018}
+.nav a.btn{padding:10px 16px;border:1px solid rgba(148,163,184,.25);border-radius:12px;transition:all .2s ease}
+.nav a.btn:hover{border-color:transparent;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:56px 0 26px}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(14,165,233,.12);color:#7dd3fc;border:1px solid rgba(125,211,252,.25);font-weight:600;font-size:12px;letter-spacing:.3px}
+h1{font-size:clamp(32px, 4vw, 54px);line-height:1.05;margin:16px 0 12px;letter-spacing:-.5px}
+.lead{font-size:18px;color:var(--muted);margin:0 0 18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{padding:14px 18px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;font-weight:800;border:none;box-shadow:var(--shadow)}
+.btn-ghost{padding:12px 16px;border-radius:12px;border:1px solid rgba(148,163,184,.25);color:var(--text)}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));border:1px solid rgba(148,163,184,.2);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.kpi{background:var(--card);border:1px solid rgba(148,163,184,.2);border-radius:16px;padding:14px}
+.kpi h3{margin:0;font-size:24px}
+.kpi p{margin:2px 0 0;color:var(--muted);font-size:12px}
+
+/* Menu */
+section{padding:42px 0}
+.section-title{display:flex;align-items:end;justify-content:space-between;margin-bottom:16px}
+.section-title h2{margin:0;font-size:28px}
+.grid{display:grid;gap:16px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+.card{background:var(--card);border:1px solid rgba(148,163,184,.18);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.price{margin-left:auto;font-weight:800;color:#86efac}
+.menu-item{display:flex;gap:12px;align-items:start}
+.menu-item h3{margin:0;font-size:16px}
+.menu-item p{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.gallery img{border-radius:14px;height:140px;object-fit:cover;border:1px solid rgba(148,163,184,.25)}
+
+/* Testimonials */
+.stars{letter-spacing:2px;color:#fde047}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input, textarea{width:100%;padding:12px 14px;border-radius:12px;background:#0b1220;border:1px solid rgba(148,163,184,.25);color:var(--text)}
+textarea{min-height:120px}
+.footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(148,163,184,.18)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .grid.cols-3{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:560px){
+  .grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"><span>TA</span></div> Tasty Adda</div>
+      <nav class="links" aria-label="Primary">
+        <a class="btn" href="#menu">Menu</a>
+        <a class="btn" href="#gallery">Gallery</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <div>
+        <span class="badge">Now open in Badlapur (W)</span>
+        <h1>Fresh plates. Zero drama. <br/> Welcome to <span style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Tasty Adda</span>.</h1>
+        <p class="lead">Your neighborhood adda for thalis, snacks, and feel‑good comfort food. Dine‑in, take away, or ping us on WhatsApp.</p>
+        <div class="cta">
+          <a class="btn-primary" href="https://wa.me/918976543210?text=Hi%20Tasty%20Adda!%20I%27d%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+          <a class="btn-ghost" href="#menu">Explore the Menu</a>
+        </div><div class="kpis">
+      <div class="kpi"><h3>4.8★</h3><p>Avg. local rating</p></div>
+      <div class="kpi"><h3>20+ </h3><p>Fan‑favorite dishes</p></div>
+      <div class="kpi"><h3>30 min</h3><p>Typical prep window</p></div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <strong>Today’s Signal Boost</strong>
+    <ul>
+      <li>Veg Thali — <em>best‑seller</em></li>
+      <li>Litti Chokha — <em>rustic & authentic</em></li>
+      <li>Paneer Tikka Roll — <em>street‑style</em></li>
+    </ul>
+    <p style="color:var(--muted);margin:8px 0 0">Open 11:00–23:00 • Closed Tuesdays</p>
+  </div>
+</section>
+
+<!-- Menu -->
+<section id="menu" class="container">
+  <div class="section-title">
+    <h2>Menu — High‑impact picks</h2>
+    <small style="color:var(--muted)">Prices tuned for Badlapur</small>
+  </div>
+  <div class="grid cols-3">
+    <div class="card">
+      <h3 style="margin:0 0 8px">Veg Thali <span class="price">₹120</span></h3>
+      <p class="muted">2 sabzi, dal, rice, roti (2), salad, papad</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Special Veg Thali <span class="price">₹160</span></h3>
+      <p>Paneer sabzi, dal tadka, jeera rice, roti (3), gulab jamun</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Litti Chokha <span class="price">₹90</span></h3>
+      <p>3 litti, chokha, chutney — wood‑smoked</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Paneer Tikka Roll <span class="price">₹110</span></h3>
+      <p>Soft rumali, mint mayo, onion crunch</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Chole Bhature <span class="price">₹110</span></h3>
+      <p>Amritsari style, pickle on the side</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Masala Maggie <span class="price">₹60</span></h3>
+      <p>Loaded with veggies and house spice</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Cold Coffee <span class="price">₹70</span></h3>
+      <p>Thick, frothy, chocolate dust</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Lassi (Sweet/Salted) <span class="price">₹60</span></h3>
+      <p>Curd, cardamom, topped with malai</p>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">French Fries <span class="price">₹70</span></h3>
+      <p>Crispy, peri‑peri option available</p>
+    </div>
+  </div>
+  <p style="color:var(--muted);margin-top:12px">* Pricing benchmarked for Badlapur (W) high‑value segment. Adjust to taste.</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="container">
+  <div class="section-title">
+    <h2>Gallery — Visual sizzle</h2>
+    <small style="color:var(--muted)">Drop in your photos later</small>
+  </div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1604908554007-09d56e3c8b56?q=80&w=1200&auto=format&fit=crop" alt="Thali"/>
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Snacks"/>
+    <img src="https://images.unsplash.com/photo-1544025163-7a7d88fb9a3b?q=80&w=1200&auto=format&fit=crop" alt="Rolls"/>
+    <img src="https://images.unsplash.com/photo-1526312426976-593c2e615581?q=80&w=1200&auto=format&fit=crop" alt="Litti"/>
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop" alt="Platter"/>
+    <img src="https://images.unsplash.com/photo-1546549039-49e0c0f0b01d?q=80&w=1200&auto=format&fit=crop" alt="Beverage"/>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="container">
+  <div class="grid cols-3">
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      “Clean place, fast service, big flavors. Paneer roll = elite.”
+      <p style="color:var(--muted);margin:8px 0 0">— Neha, Badlapur</p>
+    </div>
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      “Veg Thali is total value for money. Dal hits the spot.”
+      <p style="color:var(--muted);margin:8px 0 0">— Rahul, Ambernath</p>
+    </div>
+    <div class="card">
+      <div class="stars">★★★★☆</div>
+      “Loved the litti chokha. Smoky and legit.”
+      <p style="color:var(--muted);margin:8px 0 0">— Aarti, Kalyan</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+  <div class="section-title"><h2>Contact & Location</h2></div>
+  <div class="contact">
+    <div class="card">
+      <form name="contact" onsubmit="sendMessage(event)">
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name" required />
+        <label for="msg" style="margin-top:10px">Message</label>
+        <textarea id="msg" name="msg" placeholder="I'd like to order…" required></textarea>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <button type="submit" class="btn-primary">Message on WhatsApp</button>
+          <a class="btn-ghost" href="tel:+918976543210">Call Now</a>
+        </div>
+        <p id="status" style="color:var(--muted);margin-top:8px"></p>
+      </form>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Storefront</h3>
+      <p>Shop No. 12, Suraj Apartment, Station Road, near Suman Medical, Badlapur (W)</p>
+      <iframe title="Map" src="https://maps.google.com/maps?q=Badlapur%20West&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0;border-radius:12px"></iframe>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Tasty Adda. All rights reserved.</div>
+      <div style="opacity:.8">Built with plain HTML/CSS — host free on GitHub Pages or Netlify.</div>
+    </div>
+  </footer>  <script>
+    // WhatsApp handoff
+    function sendMessage(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const msg = document.getElementById('msg').value.trim();
+      const text = encodeURIComponent(`Hi Tasty Adda, I'm ${name}. ${msg}`);
+      const phone = '918976543210'; // change to your WhatsApp number
+      const url = `https://wa.me/${phone}?text=${text}`;
+      document.getElementById('status').textContent = 'Redirecting to WhatsApp…';
+      window.open(url, '_blank');
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
