@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sahil G. Kamble — 3D Animator | Showreel<\/title>
+  <meta name="description" content="Sahil Gautam Kamble (SSK) — 3D Animator. Showreel, selected work, and contact. Maya, Blender, Unreal Engine, After Effects, Premiere Pro, Photoshop."/>
+  <meta name="theme-color" content="#111827" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Monomaniac+One&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f19; --panel:#0f172a; --ink:#e5e7eb; --muted:#94a3b8;
+      --brand:#60a5fa; --brand2:#22d3ee; --hot:#f59e0b; --ok:#22c55e;
+      --r:20px; --shadow:0 30px 50px rgba(2,6,23,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1000px 600px at 10% -10%, rgba(34,211,238,.14), transparent 50%), radial-gradient(1000px 700px at 120% 10%, rgba(96,165,250,.18), transparent 45%), var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    img,video{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,15,25,.9), rgba(11,15,25,.65));backdrop-filter:blur(6px);border-bottom:1px solid rgba(148,163,184,.15)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .logo span{font-family:"Monomaniac One", system-ui;font-size:18px;color:#020617}
+    .links a{padding:8px 12px;border:1px solid rgba(148,163,184,.25);border-radius:12px;margin-left:8px}
+    .links a:hover{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#020617;border-color:transparent}/* Hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:48px 0 22px}
+h1{font-size:clamp(32px,4vw,56px);line-height:1.05;margin:8px 0 10px;letter-spacing:-.5px}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(96,165,250,.12);color:#93c5fd;border:1px solid rgba(125,211,252,.25);font-weight:600;font-size:12px;letter-spacing:.3px}
+.lead{color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.btn{padding:12px 16px;border-radius:14px;border:1px solid rgba(148,163,184,.25)}
+.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#020617;border:none;font-weight:800;box-shadow:var(--shadow)}
+.panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));border:1px solid rgba(148,163,184,.22);border-radius:var(--r);padding:16px;box-shadow:var(--shadow)}
+
+/* Reel card */
+.reel{position:relative;overflow:hidden;border-radius:16px}
+.reel video,.reel iframe{width:100%;height:330px;border:0;border-radius:14px;background:#000}
+.play{position:absolute;inset:auto auto 14px 14px;padding:10px 14px;border-radius:12px;background:rgba(2,6,23,.65);backdrop-filter:blur(4px);border:1px solid rgba(148,163,184,.35)}
+
+/* Projects */
+section{padding:40px 0}
+.section-title{display:flex;align-items:end;justify-content:space-between;margin-bottom:14px}
+.section-title h2{margin:0;font-size:26px}
+.grid{display:grid;gap:16px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--panel);border:1px solid rgba(148,163,184,.2);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{position:relative}
+.thumb video,.thumb img{height:180px;width:100%;object-fit:cover}
+.meta{padding:12px 14px}
+.meta h3{margin:0;font-size:16px}
+.meta p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+/* About */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+
+/* Footer */
+footer{padding:28px 0;border-top:1px solid rgba(148,163,184,.18);color:var(--muted)}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;place-items:center;padding:20px;z-index:100}
+.modal.open{display:grid}
+.modal-inner{width:min(1100px,96%)}
+.modal-close{position:absolute;top:16px;right:16px;font-size:18px;background:#111827;border:1px solid rgba(148,163,184,.35);padding:8px 12px;border-radius:10px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .grid.cols-3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .grid.cols-3{grid-template-columns:1fr}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"><span>SSK</span></div>
+        <div>
+          <strong>Sahil G. Kamble (SSK)</strong> · 3D Animator
+        </div>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#reel">Reel</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <main>
+    <!-- HERO -->
+    <section class="container hero">
+      <div>
+        <span class="badge">3D Animator · Badlapur (IN) · Open to remote & LA-based work</span>
+        <h1>Cinematic motion. Game‑ready polish.</h1>
+        <p class="lead">Character & product animation across films, ads, and realtime. Maya · Blender · Unreal Engine · Motion Design.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#reel">Play Showreel</a>
+          <a class=\"btn\" href=\"/Sahil_Gautam_Kamble_Resume.pdf\" download>Download Résumé</a>
+          <a class="btn" href="mailto:ssk9096461158@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="reel">
+          <!-- Replace the poster and src with your loop preview (muted) -->
+          <video src="reel-loop.mp4" poster="reel-poster.jpg" autoplay muted loop playsinline></video>
+          <button class="play" onclick="openReel()">▶ Play full reel</button>
+        </div>
+        <small style="color:var(--muted)">Tip: hover projects below for motion previews</small>
+      </div>
+    </section><!-- REEL MODAL -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Showreel">
+  <button class="modal-close" onclick="closeReel()">✕ Close</button>
+  <div class="modal-inner">
+    <!-- Swap the src with YouTube/Vimeo embed URL or a self-hosted mp4 -->
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid rgba(148,163,184,.25)">
+      <iframe id="reelFrame" src="https://www.youtube-nocookie.com/embed/CWrrZ4-Uf3M?autoplay=1&rel=0&modestbranding=1" title="Showreel" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- WORK -->
+<section id="work" class="container">
+  <div class="section-title">
+    <h2>Selected Work</h2>
+    <small style="color:var(--muted)">Commercial, Product, Character</small>
+  </div>
+  <div class="grid cols-3">
+    <!-- Project card template (duplicate as needed) -->
+    <article class="card" tabindex="0">
+      <div class="thumb">
+        <!-- Replace poster/thumb and video source (short 3–5s muted loop) -->
+        <video src="projects/01-teaser.mp4" poster="projects/01-thumb.jpg" muted loop playsinline></video>
+      </div>
+      <div class="meta">
+        <h3>Product Launch — Motion Pack</h3>
+        <p>Maya → Blender → AE. Stylized lighting, inertia‑driven motion design.</p>
+        <p><a href="#" onclick="viewProject('https://www.youtube-nocookie.com/embed/VIDEO_ID?autoplay=1')">View case</a></p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <div class="thumb">
+        <video src="projects/02-teaser.mp4" poster="projects/02-thumb.jpg" muted loop playsinline></video>
+      </div>
+      <div class="meta">
+        <h3>Character Acting — Short Beat</h3>
+        <p>Dialogue shot; body mechanics + facial nuance. Maya blocking to polish.</p>
+        <p><a href="#" onclick="viewProject('https://www.youtube-nocookie.com/embed/VIDEO_ID?autoplay=1')">View case</a></p>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0">
+      <div class="thumb">
+        <video src="projects/03-teaser.mp4" poster="projects/03-thumb.jpg" muted loop playsinline></video>
+      </div>
+      <div class="meta">
+        <h3>Realtime — UE Product Viz</h3>
+        <p>Nanite/Lumen scene, Sequencer pass. Interactive camera beats.</p>
+        <p><a href="#" onclick="viewProject('https://www.youtube-nocookie.com/embed/VIDEO_ID?autoplay=1')">View case</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+  <div class="section-title"><h2>About</h2></div>
+  <div class="about">
+    <div class=\"panel\">
+      <p>3D Animator focused on expressive character acting, clean arcs, and edit rhythm. Current: <strong>HMX Media</strong> (Jun 2023–Present). Trained at <strong>MAAC</strong>; alumni of R.K. Talreja College.</p>
+      <ul>
+        <li>Strengths: character acting, product motion, realtime passes</li>
+        <li>Awards: 24FPS (International) — Best 3D Animation; 24FPS Motion Graphics</li>
+        <li>Recognition: Student of the Month (1st — short film), (2nd — 3D modeling)</li>
+      </ul>
+    </div>
+    <div class=\"panel\">
+      <strong>Capabilities</strong>
+      <ul>
+        <li>Keyframe Character Animation</li>
+        <li>Product Visualization & Motion Design</li>
+        <li>Realtime (Unreal Engine Sequencer)</li>
+        <li>Rig-friendly cleanup & exports</li>
+      </ul>
+      <strong>Tools</strong>
+      <p>Maya · Blender · Unreal Engine · After Effects · Premiere Pro · Photoshop</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <div class="section-title"><h2>Contact</h2></div>
+  <div class="panel" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+    <div>
+      <p>Open to freelance/contract. Based in India; open to LA‑based work.</p>
+      <p>
+        <a class="btn btn-primary" href="mailto:ssk9096461158@gmail.com">Email</a>
+        <a class="btn" href="https://wa.me/919309140084?text=Hi%20Sahil%2C%20loved%20your%20reel." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.artstation.com/" target="_blank" rel="noopener">ArtStation</a>
+      </p>
+    </div>
+    <div style="opacity:.8">© <span id="year"></span> SSK</div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>Built with plain HTML/CSS/JS. Host on GitHub Pages.</div>
+      <div>Keyboard: ←/→ or J/K to cycle projects.</div>
+    </div>
+  </footer>  <script>
+    // --- Reel modal
+    const modal = document.getElementById('modal');
+    const frame = document.getElementById('reelFrame');
+    function openReel(){ modal.classList.add('open'); }
+    function closeReel(){ modal.classList.remove('open'); frame.src = frame.src; }
+    modal.addEventListener('click', (e)=>{ if(e.target===modal) closeReel(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeReel(); });
+
+    // --- Hover/Focus play for project thumbs
+    document.querySelectorAll('.thumb video').forEach(v=>{
+      const play = ()=>{ v.play().catch(()=>{}); };
+      const stop = ()=>{ v.pause(); v.currentTime = 0; };
+      v.closest('.card').addEventListener('mouseenter', play);
+      v.closest('.card').addEventListener('mouseleave', stop);
+      v.closest('.card').addEventListener('focus', play);
+      v.closest('.card').addEventListener('blur', stop);
+      v.muted = true; v.playsInline = true;
+    });
+
+    // --- Keyboard navigation for projects (J/K or arrows)
+    const cards = Array.from(document.querySelectorAll('#work .card'));
+    let idx = 0; function focusCard(i){ idx=(i+cards.length)%cards.length; cards[idx].focus(); }
+    document.addEventListener('keydown', (e)=>{
+      if(['ArrowRight','KeyJ'].includes(e.code)) focusCard(idx+1);
+      if(['ArrowLeft','KeyK'].includes(e.code)) focusCard(idx-1);
+    });
+
+    // --- Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- View project in modal
+    function viewProject(url){
+      modal.classList.add('open');
+      frame.src = url;
+    }
+    window.viewProject = viewProject;
+  </script></body>
+  </html>
