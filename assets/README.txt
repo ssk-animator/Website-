@@ -1,0 +1,1 @@
+Replace this folder with your production assets. Add 'resume.pdf' and 'preview.png' to enable CV download and social preview.
